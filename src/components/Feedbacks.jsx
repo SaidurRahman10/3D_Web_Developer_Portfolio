@@ -3,7 +3,7 @@ import React from 'react';
 const Feedbacks = () => {
     return (
         <div>
-            Experience
+            feedback
         </div>
     );
 };
