@@ -6,6 +6,9 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+
+
+
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -14,24 +17,51 @@ const Contact = () => {
     message: "",
   });
   const [loading, setLoading] = useState(false);
-  const handleChange = (e) => {};
+  const handleChange = (e) => {
+    const {name, value} = e.target;
+    setForm({...form, [name]: value})
 
-  const handelSubmit = (e) => {
-    //     e.preventDefault()
-    //     setLoading(true)
-    //     emailjs.sendForm('gmail', 'contact_form', form)
-    //       .then((result) => {
-    //             console.log(result.text);
-    //             setLoading(false)
-    //             setForm({
-    //                 name: '',
-    //                 email: '',
-    //                 message: ''
-    //             })
-    //         }, (error) => {
-    //             console.log(error.text);
-    //             setLoading(false)
-    //         });
+    
+  };
+  //g9oN8cebO47_Q79b8
+// template_gvmxoyb
+// service_bdcuskt
+
+const handleSubmit = (e) => {
+    e.preventDefault();
+    setLoading(true);
+
+    emailjs
+      .send(
+        process.env.React_APP_serviceKey,
+        process.env.REACT_APP_templateKey,
+        {
+          from_name: form.name,
+          to_name: "Saidur Rahman",
+          from_email: form.email,
+          to_email: "saidurrahman1473@gmail.com",
+          message: form.message,
+        },
+        process.env.React_APP_publicKey
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Thank you. I will get back to you as soon as possible.");
+
+          setForm({
+            name: "",
+            email: "",
+            message: "",
+          });
+        },
+        (error) => {
+          setLoading(false);
+          console.error(error);
+
+          alert("Ahh, something went wrong. Please try again.");
+        }
+      );
   };
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
@@ -44,7 +74,7 @@ const Contact = () => {
 
         <form
           ref={formRef}
-          onSubmit={handelSubmit}
+          onSubmit={handleSubmit}
           className="mt-12 flex flex-col gap-8"
         >
           <label className="flex flex-col">
