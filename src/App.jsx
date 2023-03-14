@@ -14,8 +14,8 @@ const App = () => {
   return (
     <div>
       <BrowserRouter>
-        <div className="relative z-0 bg-primary">
-        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
+        <div className="relative z-0  bg-gradient-to-r from-cyan-300 via-cyan-600 to-pink-400">
+          <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
             <Navbar />
             <Hero />
           </div>
@@ -26,9 +26,8 @@ const App = () => {
           <Feedbacks />
 
           <div className="relative z-0">
-
             <Contact />
-           <StarsCanvas />
+            <StarsCanvas />
           </div>
         </div>
       </BrowserRouter>

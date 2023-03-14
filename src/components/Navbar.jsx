@@ -10,7 +10,7 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <nav
-      className={`${styles.paddingX} w-full flex item-center py-5 fixed top-0 z-20 bg-primary`}
+      className={`${styles.paddingX} w-full flex item-center py-5 fixed top-0 z-20 bg-gradient-to-r from-cyan-300 via-cyan-600 to-pink-400 bg-opacity-60`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
         <Link
@@ -33,7 +33,7 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "text-white" : "text-secondary"
+                active === nav.title ? "text-white" : ""
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
@@ -60,7 +60,7 @@ const Navbar = () => {
                 <li
                   key={nav.id}
                   className={`${
-                    active === nav.title ? "text-white" : "text-secondary"
+                    active === nav.title ? "text-white" : ""
                   } font-poppins font-medium text-[16px] cursor-pointer`}
                   onClick={() => {
                     setToggle(!toggle);
