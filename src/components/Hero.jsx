@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import ComputersCanvas from "./canvas/Computers";
+import logo from "../assets/logo.png";
+import { FaFacebook , FaTwitter, FaLinkedin, FaGithub , FaDownload } from 'react-icons/fa';
+import { Typewriter } from 'react-simple-typewriter'
 
 const Hero = () => {
   return (
@@ -8,23 +11,35 @@ const Hero = () => {
       <div
         className={`absolute inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
+        <div>
+          
+        
+        <img className=" md:h-60 w-auto hidden md:block" src={logo} />
+        </div>
         <div className="flex flex-col justify-center items-center mt-5">
-          <div className="w-5 h-5 rounded-full bg-yellow-400 opacity-75 " />
+          <div className="w-5 h-5 rounded-full bg-yellow-400 opacity-75" />
           <div className="w-1 sm:h-80 h-40 bg-yellow-400 opacity-25" />
         </div>
 
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className=" text-yellow-400">Saidur Rahman</span>
+            Hi, I'm &nbsp;<span className=" text-yellow-400">
+            <Typewriter
+                       loop={20}
+                      cursor
+                      cursorStyle='_'
+                     words={['SRS', 'Saidur Rahman', 'Saidur', ' Saidur Rahman']}
+                    />
+
+            </span>
           </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100 `}>
-            I develop 3D visuals, user <br className="sm:block hidden" />
-            interfaces and web applications
+          <p className={`${styles.heroSubText} mt-2 text-white-100 uppercase`}>
+          Professional FULL STACK DEVELOPER  
           </p>
         </div>
       </div>
      
-     <div className="h-16">
+     <div className="lg:h-16 h-32 ">
     
      </div>
 

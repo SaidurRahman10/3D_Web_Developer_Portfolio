@@ -23,20 +23,30 @@ import {
   jobit,
   tripguide,
   threejs,
+  fastResale,
+  marnState ,
+ tourest ,
+ digitalLearning ,
+ ecommerce ,
+ portfolioWebsite
+ 
+  
+  
+ 
 } from "../assets";
 
 export const navLinks = [
   {
     id: "about",
-    title: "About",
+    title: "ABOUT",
   },
   {
     id: "work",
-    title: "Work",
+    title: "WORK",
   },
   {
     id: "contact",
-    title: "Contact",
+    title: "CONTACT",
   },
 ];
 
@@ -112,6 +122,10 @@ const technologies = [
     name: "docker",
     icon: docker,
   },
+  
+  
+ 
+  
 ];
 
 const experiences = [
@@ -197,6 +211,118 @@ const testimonials = [
 ];
 
 const projects = [
+ 
+  {
+    name: "Trip Guide",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Firebase",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: tourest,
+    source_code_link: "https://github.com/SaidurRahman10/TIMETOGO-CLIENT",
+    live_website:"https://timetogo-d9e5b.web.app/"
+  },
+
+  {
+    name: "Fast Resale",
+    description:
+      "The Website is For Sell Secondhand cars.This project was create by Tailwind with tailwind components & [Create React App], React Router Dom ,Express, mongoDb and some Common Functionality .",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Expressjs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: fastResale,
+    source_code_link: "https://github.com/SaidurRahman10/Fast-Resale-client",
+    live_website:"https://fast-resale-100e5.web.app/"
+  },
+  {
+    name: "Portfolio Website",
+    description:
+      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+    tags: [
+      {
+        name: "reactjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Expressjs",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: portfolioWebsite,
+    source_code_link: "https://github.com/SaidurRahman10/Portfolio2.0-",
+    live_website:"https://lambent-semifreddo-346ef1.netlify.app/"
+  },
+  {
+    name: "Ecommerce Website",
+    description:
+      "This website is E-commerce Website. This website main priority is Selling Product. There is cart section for byre and Some Unique Feature in there.",
+    tags: [
+      {
+        name: "HTML",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: ecommerce,
+    source_code_link: "https://github.com/SaidurRahman10/Professonal-Ecommerce-Website",
+    live_website:"https://saidurrahman10.github.io/Professonal-Ecommerce-Website/"
+  },
+  {
+    name: "Task Management",
+    description:
+      "Web application that organize user task , view estimated task time ranges for on time work complete, and locate available time based on their current time.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Firebase",
+        color: "green-text-gradient",
+      },
+      {
+        name: "scss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: marnState,
+    source_code_link: "https://github.com/SaidurRahman10/Task-Management-Tool-Client",
+    live_website:"https://task-management-tool-6bc39.web.app/"
+  },
   {
     name: "Car Rent",
     description:
@@ -218,48 +344,7 @@ const projects = [
     image: carrent,
     source_code_link: "https://github.com/",
   },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-  },
+  
 ];
 
 export { services, technologies, experiences, testimonials, projects };

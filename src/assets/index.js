@@ -29,6 +29,13 @@ import tesla from "./company/tesla.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
+import marnState from "./marnState.png";
+import tourest from "./tourest.png";
+import digitalLearning from "./digitalLearning.png";
+import ecommerce from "./ecommerce.png";
+import fastResale from "./fastResale.png";
+import portfolioWebsite from "./portfolioWebsite.png";
+
 
 export {
   logo,
@@ -59,4 +66,12 @@ export {
   carrent,
   jobit,
   tripguide,
+  fastResale,
+  marnState ,
+ tourest ,
+ digitalLearning ,
+ ecommerce,
+ portfolioWebsite
+ 
+
 };

@@ -25,7 +25,7 @@ const Navbar = () => {
 
           <div className="text-white text-[18px] font-bold cursor-pointer flex">
             Saidur Rahman &nbsp;
-            <span className="sm:block hidden">| MERN Stack Dev.</span>
+            <span className="lg:block hidden">| MERN Stack Dev.</span>
           </div>
         </Link>
         <ul className="list-none hidden sm:flex flex-row gap-10">
