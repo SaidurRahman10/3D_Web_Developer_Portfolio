@@ -115,6 +115,17 @@ const About = () => {
                       </div>
                     </div>
                   </div>
+                  <button
+                    onClick={() =>
+                      window.open(
+                        "https://drive.google.com/file/d/1JVjmAtzc3CFbEC8C62qjsVzRAgtD_pPJ/view?usp=sharing",
+                        "_blank"
+                      )
+                    }
+                    className="btn w-full py-2 duration-300 bg-cyan-600 mt-5 rounded-lg shadow-lg hover:bg-indigo-600"
+                  >
+                    Download Resume
+                  </button>
                 </div>
               </div>
             </div>

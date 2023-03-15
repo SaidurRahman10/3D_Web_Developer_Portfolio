@@ -24,15 +24,13 @@ import {
   tripguide,
   threejs,
   fastResale,
-  marnState ,
- tourest ,
- digitalLearning ,
- ecommerce ,
- portfolioWebsite
+  marnState,
+  tourest,
  
-  
-  
- 
+  ecommerce,
+  portfolioWebsite,
+  linkedin,
+  fiverr
 } from "../assets";
 
 export const navLinks = [
@@ -56,7 +54,7 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "React.JS Developer",
     icon: mobile,
   },
   {
@@ -122,19 +120,19 @@ const technologies = [
     name: "docker",
     icon: docker,
   },
-  
-  
- 
-  
 ];
+
+
+
+
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Web Design & WordPress Developer",
+    company_name: "Fiverr.",
+    icon: fiverr,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: `January 2020 - March 2021`,
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -143,9 +141,9 @@ const experiences = [
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "React.JS Developer",
+    company_name: "Fiverr.",
+    icon: fiverr,
     iconBg: "#E6DEDD",
     date: "Jan 2021 - Feb 2022",
     points: [
@@ -156,11 +154,11 @@ const experiences = [
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Front-End Developer",
+    company_name: "Linked in Work for a Man",
+    icon: linkedin,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Feb 2022 - Jan 2023",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -168,50 +166,37 @@ const experiences = [
       "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
+  
 ];
 
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "I thought it was impossible to make a website as beautiful as our product, but Saidur Rahman proved me wrong.",
+    name: "AS Arman",
+    designation: "Web Developer",
+    company: "Fiverr.",
+    image: "https://i.ibb.co/CvxFhRk/min1.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      " Saidur is my student, He is very good Developer you already know about this. He is truly cares about their clients' success like Saidur does.",
+    name: "Jhankar Mahbub",
+    designation: "CEO",
+    company: "Programming Hero",
+    image: "https://i.ibb.co/VT58Yw1/mini3.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Saidur Rahman is a Great Developer. After Saidur optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    name: "Mohipul Islam",
+    designation: "Front-End Engineer",
+    company: "SIMEC",
+    image: "https://i.ibb.co/4VCqWKM/mini2.jpg",
   },
 ];
 
 const projects = [
- 
   {
     name: "Trip Guide",
     description:
@@ -232,7 +217,7 @@ const projects = [
     ],
     image: tourest,
     source_code_link: "https://github.com/SaidurRahman10/TIMETOGO-CLIENT",
-    live_website:"https://timetogo-d9e5b.web.app/"
+    live_website: "https://timetogo-d9e5b.web.app/",
   },
 
   {
@@ -255,7 +240,7 @@ const projects = [
     ],
     image: fastResale,
     source_code_link: "https://github.com/SaidurRahman10/Fast-Resale-client",
-    live_website:"https://fast-resale-100e5.web.app/"
+    live_website: "https://fast-resale-100e5.web.app/",
   },
   {
     name: "Portfolio Website",
@@ -277,7 +262,7 @@ const projects = [
     ],
     image: portfolioWebsite,
     source_code_link: "https://github.com/SaidurRahman10/Portfolio2.0-",
-    live_website:"https://lambent-semifreddo-346ef1.netlify.app/"
+    live_website: "https://lambent-semifreddo-346ef1.netlify.app/",
   },
   {
     name: "Ecommerce Website",
@@ -298,8 +283,9 @@ const projects = [
       },
     ],
     image: ecommerce,
-    source_code_link: "https://github.com/SaidurRahman10/Professonal-Ecommerce-Website",
-    live_website:"https://saidurrahman10.github.io/Professonal-Ecommerce-Website/"
+    source_code_link:
+      "https://github.com/SaidurRahman10/Professonal-Ecommerce-Website",
+    live_website: "https://saidurrahman10.github.io/Professonal-Ecommerce-Website/",
   },
   {
     name: "Task Management",
@@ -320,8 +306,9 @@ const projects = [
       },
     ],
     image: marnState,
-    source_code_link: "https://github.com/SaidurRahman10/Task-Management-Tool-Client",
-    live_website:"https://task-management-tool-6bc39.web.app/"
+    source_code_link:
+      "https://github.com/SaidurRahman10/Task-Management-Tool-Client",
+    live_website: "https://task-management-tool-6bc39.web.app/",
   },
   {
     name: "Car Rent",
@@ -343,8 +330,8 @@ const projects = [
     ],
     image: carrent,
     source_code_link: "https://github.com/",
+    live_website: "https://task-management-tool-6bc39.web.app/",
   },
-  
 ];
 
 export { services, technologies, experiences, testimonials, projects };

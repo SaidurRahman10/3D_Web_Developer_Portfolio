@@ -80,8 +80,8 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="What's your good name?"
-              className=" bg-opacity-50 bg-gradient-to-r from-slate-600 via-cyan-500 py-4 px-6 placeholder: text-white rounded-lg outline-none border-none font-medium"
-            />
+              className=" bg-[#296A75] shadow-inner py-4 px-6 placeholder: text-white rounded-lg outline-none border-none font-medium placeholder:text-slate-300"
+            required />
           </label>
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your email</span>
@@ -91,8 +91,8 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="What's your web address?"
-              className="bg-opacity-50 bg-gradient-to-r from-slate-600 via-cyan-500 py-4 px-6 placeholder: text-white rounded-lg outline-none border-none font-medium"
-            />
+              className=" bg-[#296A75] shadow-inner py-4 px-6 white rounded-lg outline-none border-none font-medium placeholder:text-slate-300"
+              required />
           </label>
           <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Message</span>
@@ -102,8 +102,8 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder="What you want to say?"
-              className="bg-opacity-50 bg-gradient-to-r from-slate-600 via-cyan-500   py-4 px-6 placeholder: text-[#fff] rounded-lg outline-none border-none font-medium"
-            />
+              className=" bg-[#296A75]  shadow-inner placeholder:text-slate-300  py-4 px-6 placeholder: text-[#fff] rounded-lg outline-none border-none font-medium "
+              required />
           </label>
 
           <button

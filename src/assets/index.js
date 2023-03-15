@@ -35,6 +35,8 @@ import digitalLearning from "./digitalLearning.png";
 import ecommerce from "./ecommerce.png";
 import fastResale from "./fastResale.png";
 import portfolioWebsite from "./portfolioWebsite.png";
+import fiverr from "./company/fiverr.png";
+import linkedin from "./company/linkedin.png";
 
 
 export {
@@ -71,7 +73,9 @@ export {
  tourest ,
  digitalLearning ,
  ecommerce,
- portfolioWebsite
+ portfolioWebsite,
+ fiverr,
+ linkedin
  
 
 };
